@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 
 class Dog:
-    # Class body goes here
+    def __init__(self, name="Unnamed"):  # Default name to prevent errors
+        self.name = name
 
-    #Instance method definition
-    pass
+    def bark(self):  # Instance method
+        print("Woof!")
+
+    def sit(self):  # Instance method
+        print("The dog is sitting.")
+
+# Example usage
+fido = Dog("Buddy")
+fido.bark()  # Output: Woof!
+fido.sit()  # Output: The dog is sitting.
